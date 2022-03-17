@@ -17,6 +17,7 @@
     - [Insertion in **AVL** Tree](#insertion-in-avl-tree)
     - [Deletion in **AVL** Tree](#deletion-in-avl-tree)
   - [Advantages of **AVL** Trees](#advantages-of-avl-trees)
+  - [Implementations](#implementations)
 
 &nbsp;
 &nbsp;
@@ -300,7 +301,12 @@ Here are the steps we need to make to delete a node from the tree.
 [Back To Top](#table-of-contents)
 
 ## Advantages of **AVL** Trees
+
 - The height of the AVL tree is always balanced.  
-The height never grows beyond log N, where N is the total number of nodes in the tree.
+  The height never grows beyond log N, where N is the total number of nodes in the tree.
 - It gives better search time complexity when compared to simple Binary Search trees.
 - AVL trees have self-balancing capabilities.
+
+## Implementations
+
+- [JS implementation](implementation/avl_tree.js)
