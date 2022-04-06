@@ -40,7 +40,7 @@ A Tree is typically traversed in two ways:
 - Depth First Traversals
   - Inorder Traversal (Left-Root-Right)
   - Preorder Traversal (Root-Left-Right)
-  - Postorder Traversal (Left-Root-Right)
+  - Postorder Traversal (Left-Right-Root)
 
 ## AVL Trees
 
@@ -103,3 +103,10 @@ i.e., first **LL rotation** is performed on subtree and then **RR rotation** is 
 ![alt text](https://www.guru99.com/images/2/063020_0727_AVLTreesRot6.png)
 
 ## Red-Black Trees
+
+In addition to the requirements imposed on a binary search tree the following must be satisfied by a red–black tree:
+
+* Each node is either red or black.
+* All NIL nodes are considered black.
+* A red node does not have a red child.
+* Every path from a given node to any of its descendant NIL nodes goes through the same number of black nodes.
