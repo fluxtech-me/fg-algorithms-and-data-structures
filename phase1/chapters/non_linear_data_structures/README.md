@@ -5,5 +5,5 @@
     *  ## [AVL tree](topics/avl_tree/README.md)
     *  ## [Red-black tree](topics/red_black_tree/README.md)
     *  ## B-tree
-    *  ## Heap
+    *  ## [Heap](topics/heap/README.md)
 *  ## Graphs
