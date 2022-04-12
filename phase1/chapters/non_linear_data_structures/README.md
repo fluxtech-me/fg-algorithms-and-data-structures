@@ -6,4 +6,4 @@
     *  ## [Red-black tree](topics/red_black_tree/README.md)
     *  ## B-tree
     *  ## [Heap](topics/heap/README.md)
-*  ## Graphs
+*  ## [Graphs](topics/graph/README.md) 
