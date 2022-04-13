@@ -139,7 +139,7 @@ If the edges appear in the edge list in no particular order, that's a linear sea
 
 ### **Adjacency Matrices**
 
-For a graph with $|V|$ vertices, an adjacency matrix is a $∣V∣×∣V∣$ matrix of 0s and 1s,  
+For a graph with $|V|$ vertices, an adjacency matrix is a $|V|\times |V|$ matrix of 0s and 1s,  
 where the entry in row $i$ and column $j$ is 1 if and only if the edge $(i,j)$ is in the graph.
 
 Here's the adjacency matrix for the example graph:
@@ -172,7 +172,7 @@ you have to look at all $|V|$ entries in row $i$, even if only small number of v
 
 ### **Incidence Matrices**
 
-For a graph with $|V|$ vertices, an adjacency matrix is a $∣V∣×∣E∣$ matrix of 0s and 1s,  
+For a graph with $|V|$ vertices, an adjacency matrix is a $|V|\times |E|$ matrix of 0s and 1s,  
 where the entry in row $i$ and column $j$ is 1 if and only if the vertex $i$ is incident to vertex $j$in the graph.
 
 Let's consider the following example:
@@ -196,7 +196,7 @@ In JS, we'll represent the adjacency matrix as:
 
 Incidence Matrices are similar to adjacency matrices, they have mainly the same disadvantages.
 
-**First**, it takes $O(V×E)$ space.  
+**First**, it takes $O(V\times E)$ space.  
 **Second**, if you want to find out which edges are incident to a given vertex $i$,  
 you have to look at all $|E|$ entries in row $i$, even if only small number of edges are incident to vertex $i$.
 
@@ -233,7 +233,7 @@ To find out whether an edge $(i,j)$ is present in the graph, we go to $i$'s adja
 **How long does that take in the worst case?**  
 The answer is $O(d)$, where $d$ is the degree of vertex $i$, because that's how long $i$'s adjacency list is.
 
-The degree of vertex $i$ could be as high as $|V|-1$ (if $i$ is adjacent to all the other $|V|-1∣$ vertices) or as low as 0 (if $i$ is isolated, with no incident edges).
+The degree of vertex $i$ could be as high as $|V|-1$ (if $i$ is adjacent to all the other $|V|-1|$ vertices) or as low as 0 (if $i$ is isolated, with no incident edges).
 
 **How much space do adjacency lists take?**  
 We have $|V|$ lists, and although each list could have as many as $|V|-1$ vertices,  
@@ -247,7 +247,7 @@ Imagine the situation where we have to choose a technique to represent **Faceboo
 
 Let's also do the following assumptions:
 
-- **Facebook total users**: $2×10^9$
+- **Facebook total users**: $2\times 10^9$
 - **User's total friends**: $5000$
 
 ![alt text](src/users_graph.png)
