@@ -13,6 +13,10 @@
     - [**Adjacency Matrices**](#adjacency-matrices)
     - [**Incidence Matrices**](#incidence-matrices)
     - [**Adjacency lists**](#adjacency-lists)
+    - [**Representations' evaluation**](#representations-evaluation)
+  - [Haven't we ever used graphs?](#havent-we-ever-used-graphs)
+  - [Applications](#applications)
+  - [Some Experience Sharing](#some-experience-sharing)
 
 ## Definition
 
@@ -233,5 +237,74 @@ The degree of vertex $i$ could be as high as $|V|-1$ (if $i$ is adjacent to all 
 
 **How much space do adjacency lists take?**  
 We have $|V|$ lists, and although each list could have as many as $|V|-1$ vertices,  
-in total the adjacency lists for an undirected graph contain $2|E|$ elements.
+in total the adjacency lists for an undirected graph contain $2|E|$ elements.  
 Why $2|E|$? Each edge $(i,j)$ appears exactly twice in the adjacency lists, once in $i$'s list and once in $j$'s list, and there are $|E|$ edges.
+
+### **Representations' evaluation**
+
+Let's evaluate the representations we've discussed.
+Imagine the situation where we have to choose a technique to represent **Facebook**'s users' relations (friend/non-friend).
+
+Let's also do the following assumptions:
+
+- **Facebook total users**: $2×10^9$
+- **User's total friends**: $5000$
+
+![alt text](src/users_graph.png)
+
+## Haven't we ever used graphs?
+
+Isn't there any chance that we've already used graphs without actually calling them graphs?
+Let's remember the definition of the tree.
+
+A tree
+is a non-linear
+data structure that represents the hierarchy.  
+A tree is a collection of nodes that are linked together to form a hierarchy.
+![alt text](src/tree.png)
+
+For, we already know the graph definition, let's look at this example:
+![alt text](src/graph.png)
+
+Is there any difference between the previous tree and this graph?
+
+Actually, no. This graph is the previous tree 90 degree rotated.  
+So, a reasonable question arises. Can we define a tree from graph's aspect?  
+The answer is yes.
+
+**Tree** is **an undirected graph** in which any two vertices are connected by exactly one path.
+
+Also, there's such graph called **forest**.  
+A **forest** is an undirected graph in which any two vertices are connected by at most one path, or equivalently a disjoint union of trees.  
+Here's an example of a forest:
+![alt text](src/forest.png)
+
+## Applications
+
+1. **Dijkstra’s Shortest Paths Algorithm**  
+   Google Maps and Routes APIs are classic Shortest Path APIs. This a graph problem that's very easy to solve with edge-weighted directed graphs (digraphs).  
+   The idea of a Map API is to find the shortest path from one vertex to every other as in a single source shortest path variant, from your current location to every other destination you might be interested in going to on the map.
+   ![alt text](src/path_application.png)
+
+2. **Linguistics**  
+   In linguistics, graphs are mostly used for parsing of a language tree and grammar of a language tree.  
+   Semantics networks are used within lexical semantics, especially as applied to computers, modeling word meaning is easier when a given word is understood in terms of related words.
+
+3. **Physics and Chemistry**
+   In physics and chemistry, graph theory is used to study molecules.  
+   Graph is also helpful in constructing the molecular structure as well as lattice of the molecule.  
+   It also helps us to show the bond relation in between atoms and molecules, also help in comparing structure of one molecule to others.
+
+4. **Facebook Graph**
+   On Facebook, users are considered to be the vertices and if they are friends then there is an edge running between them.  
+   Facebook’s Friend suggestion algorithm uses graph theory.
+
+5. **World Wide Web**
+   In World Wide Web, web pages are considered to be the vertices. There is an edge from a page u to other page v if there is a link of page v on page u.  
+   This is an example of Directed graph. It was the basic idea behind [Google Page Ranking Algorithm](https://www.geeksforgeeks.org/page-rank-algorithm-implementation/).
+
+6. **Connected components' algorithm**  
+   The connected components' algorithm is a graph theory algorithm used to find the connected components of a graph.  
+   It is a simple algorithm that takes into account the edges and vertices of a graph.
+
+## Some Experience Sharing
