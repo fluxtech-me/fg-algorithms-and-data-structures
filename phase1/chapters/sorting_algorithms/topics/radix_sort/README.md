@@ -86,16 +86,16 @@ Now, let's see the time complexity of Radix sort in **best** case, **average** c
 
 - **Best Case Complexity** - It occurs when there is no sorting required, i.e. the array is already sorted.
 - **Average Case Complexity** - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending.  
-  The average case time complexity of Radix sort is $O(d(n + r))$.
+  The average case time complexity of Radix sort is ![equation](http://latex.codecogs.com/gif.latex?O%28d%28n%20%2B%20r%29%29).
 - **Worst Case Complexity** - It occurs when the array elements are required to be sorted in reverse order.  
   That means suppose you have to sort the array elements in ascending order, but its elements are in descending order.  
-  The worst-case time complexity of Radix sort is $O(d(n + r))$.
+  The worst-case time complexity of Radix sort is ![equation](http://latex.codecogs.com/gif.latex?O%28d%28n%20%2B%20r%29%29).
 
 |       **Case**        | **Complexity** |
 | :-------------------: | -------------- |
-|  **Worst case time**  | $O(d(n + r))$  |
-|  **Best case time**   | $O(n + r)$     |
-| **Average case time** | $O(d(n + r))$  |
+|  **Worst case time**  | ![equation](http://latex.codecogs.com/gif.latex?O%28d%28n%20%2B%20r%29%29)  |
+|  **Best case time**   | ![equation](http://latex.codecogs.com/gif.latex?O%28n%20%2B%20r%29)     |
+| **Average case time** | ![equation](http://latex.codecogs.com/gif.latex?O%28d%28n%20%2B%20r%29%29)  |
 
 ## Advantages and Disadvantages
 

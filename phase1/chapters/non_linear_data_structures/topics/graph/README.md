@@ -24,10 +24,10 @@ In computer science, graph theory is the study of graphs,
 a mathematical structure used to model pair wise relations between objects from a certain collection.
 
 In one restricted but very common sense of the term,  
-a graph is an ordered pair $G = (V,E)$ comprising:
+a graph is an ordered pair ![equation](http://latex.codecogs.com/gif.latex?G%20%3D%20%28V%2CE%29) comprising:
 
-- $V$, a set of **vertices** (also called **nodes** or **points**): $V = \{v_{1}, v_{2}, ..., v_{n}\}$ ;
-- ${\displaystyle E\subseteq \{\{x,y\}\mid x,y\in V\;{\textrm {and}}\;x\neq y\}}$, a set of **edges** (also called **links** or **lines**),  
+- ![equation](http://latex.codecogs.com/gif.latex?V), a set of **vertices** (also called **nodes** or **points**): ![equation](http://latex.codecogs.com/gif.latex?V%20%3D%20%5C%7Bv_%7B1%7D%2C%20v_%7B2%7D%2C%20...%2C%20v_%7Bn%7D%5C%7D) ;
+- ![equation](http://latex.codecogs.com/gif.latex?%7B%5Cdisplaystyle%20E%5Csubseteq%20%5C%7B%5C%7Bx%2Cy%5C%7D%5Cmid%20x%2Cy%5Cin%20V%5C%3B%7B%5Ctextrm%20%7Band%7D%7D%5C%3Bx%5Cneq%20y%5C%7D%7D), a set of **edges** (also called **links** or **lines**),  
   which are unordered pairs of vertices (that is, an edge is associated with two distinct vertices).
 
 To avoid ambiguity, this type of object may be called precisely an **undirected simple graph**.
@@ -36,8 +36,8 @@ Let's quickly look at the following example:
 
 ![alt text](src/SIMPLE-GRAPH.jpg)
 
-- $V = \{A, B, C, D, E, F\}$
-- $E = \{AB, AD, AE, BC, CE, CF, DE, EF\}$
+- ![equation](http://latex.codecogs.com/gif.latex?V%20%3D%20%5C%7BA%2C%20B%2C%20C%2C%20D%2C%20E%2C%20F%5C%7D)
+- ![equation](http://latex.codecogs.com/gif.latex?E%20%3D%20%5C%7BAB%2C%20AD%2C%20AE%2C%20BC%2C%20CE%2C%20CF%2C%20DE%2C%20EF%5C%7D)
 
 ## History
 
@@ -78,7 +78,7 @@ The following table represents the types of graphs and their examples:
 | **Null Graph** |A graph whose edge set is empty is called as a null graph. |![alt text](src/null_graph.jpg) |
 |**Trivial Graph** |A graph having only one vertex in it is called as a trivial graph. It's smallest possible graph. |![alt text](src/trivial.png) |
 | **Connected Graph** | A connected graph is the one in which there is a path between each of the vertices. This means that there is not a single vertex which is isolated or without a connecting edge. | ![alt text](src/connected.png) |
-| **Complete Graph** | A graph in which each node is connected to another is called a complete graph. If $N$ is the total number of nodes in a graph then the complete graph contains $\frac{N(N-1)}{2}$ number of edges.| ![alt text](src/complete.png) |
+| **Complete Graph** | A graph in which each node is connected to another is called a complete graph. If ![equation](http://latex.codecogs.com/gif.latex?N) is the total number of nodes in a graph then the complete graph contains ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7BN%28N-1%29%7D%7B2%7D) number of edges.| ![alt text](src/complete.png) |
 | **Weighted Graph** | A positive value assigned to each edge indicating its length (distance between the vertices connected by an edge) is called weight. The graph containing weighted edges is called a weighted graph | ![alt text](src/weighted.png) |
 | **Directed Graph** | A directed graph is a graph in which every edge is associated with a specific direction and the traversal can be done in specified direction only | ![alt text](src/directed1.png) |
 |**Planar Graph** |A planar graph is a graph that we can draw in a plane such that no two edges of it cross each other. [Playground](https://mathigon.org/course/graph-theory/planar-graphs) | ![alt text](src/planar.png)|
@@ -103,11 +103,11 @@ Let's consider an example graph:
 
 ### **Edge lists**
 
-One simple way to represent a graph is just a list, or array, of $|E|$ edges, which we call an **edge list**.
+One simple way to represent a graph is just a list, or array, of ![equation](http://latex.codecogs.com/gif.latex?%7CE%7C) edges, which we call an **edge list**.
 
 To represent an edge, we just have an array of two vertex numbers.  
 If edges have weights, add either a third element to the array or more information to the object, giving the edge's weight.  
-Since each edge contains just two or three numbers, the total space for an edge list is $O(E)$.  
+Since each edge contains just two or three numbers, the total space for an edge list is ![equation](http://latex.codecogs.com/gif.latex?O%28E%29).  
 For the example graph the **edge list** representation will have the following structure:
 
 ```javascript
@@ -133,14 +133,14 @@ For the example graph the **edge list** representation will have the following s
 Edge lists are simple, but if we want to find whether the graph contains a particular edge,  
 we have to search through the edge list.
 
-If the edges appear in the edge list in no particular order, that's a linear search through $|E|$ edges.
+If the edges appear in the edge list in no particular order, that's a linear search through ![equation](http://latex.codecogs.com/gif.latex?%7CE%7C) edges.
 
-**Question to think about**: How can you organize an edge list to make searching for a particular edge take $O(log E)$ time?
+**Question to think about**: How can you organize an edge list to make searching for a particular edge take ![equation](http://latex.codecogs.com/gif.latex?O%28log%20E%29) time?
 
 ### **Adjacency Matrices**
 
-For a graph with $|V|$ vertices, an adjacency matrix is a $|V|\times |V|$ matrix of 0s and 1s,  
-where the entry in row $i$ and column $j$ is 1 if and only if the edge $(i,j)$ is in the graph.
+For a graph with ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C) vertices, an adjacency matrix is a ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C%5Ctimes%20%7CV%7C) matrix of 0s and 1s,  
+where the entry in row ![equation](http://latex.codecogs.com/gif.latex?i) and column ![equation](http://latex.codecogs.com/gif.latex?j) is 1 if and only if the edge ![equation](http://latex.codecogs.com/gif.latex?%28i%2Cj%29) is in the graph.
 
 Here's the adjacency matrix for the example graph:
 
@@ -165,20 +165,20 @@ With an adjacency matrix, we can find out whether an edge is present in constant
 
 So what's the disadvantage of an adjacency matrix? **Two things**, actually.
 
-**First**, it takes $O(V^2)$ space. The adjacency matrix is mostly 0s, and we use lots of space to represent only a few edges.
+**First**, it takes ![equation](http://latex.codecogs.com/gif.latex?O%28V%5E2%29) space. The adjacency matrix is mostly 0s, and we use lots of space to represent only a few edges.
 
-**Second**, if you want to find out which vertices are adjacent to a given vertex $i$,  
-you have to look at all $|V|$ entries in row $i$, even if only small number of vertices are adjacent to vertex $i$.
+**Second**, if you want to find out which vertices are adjacent to a given vertex ![equation](http://latex.codecogs.com/gif.latex?i),  
+you have to look at all ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C) entries in row ![equation](http://latex.codecogs.com/gif.latex?i), even if only small number of vertices are adjacent to vertex ![equation](http://latex.codecogs.com/gif.latex?i).
 
 ### **Incidence Matrices**
 
-For a graph with $|V|$ vertices, an adjacency matrix is a $|V|\times |E|$ matrix of 0s and 1s,  
-where the entry in row $i$ and column $j$ is 1 if and only if the vertex $i$ is incident to vertex $j$in the graph.
+For a graph with ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C) vertices, an adjacency matrix is a ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C%5Ctimes%20%7CE%7C) matrix of 0s and 1s,  
+where the entry in row ![equation](http://latex.codecogs.com/gif.latex?i) and column ![equation](http://latex.codecogs.com/gif.latex?j) is 1 if and only if the vertex ![equation](http://latex.codecogs.com/gif.latex?i) is incident to vertex ![equation](http://latex.codecogs.com/gif.latex?j)in the graph.
 
 Let's consider the following example:
 ![alt text](src/incident.png)
 
-|       | $e_{1}$ | $e_{2}$ | $e_{3}$ | $e_{4}$ |
+|       | ![equation](http://latex.codecogs.com/gif.latex?e_%7B1%7D) | ![equation](http://latex.codecogs.com/gif.latex?e_%7B2%7D) | ![equation](http://latex.codecogs.com/gif.latex?e_%7B3%7D) | ![equation](http://latex.codecogs.com/gif.latex?e_%7B4%7D) |
 | :---: | ------- | ------- | ------- | ------- |
 | **1** | 1       | 1       | 1       | 0       |
 | **2** | 1       | 0       | 0       | 0       |
@@ -196,15 +196,15 @@ In JS, we'll represent the adjacency matrix as:
 
 Incidence Matrices are similar to adjacency matrices, they have mainly the same disadvantages.
 
-**First**, it takes $O(V\times E)$ space.  
-**Second**, if you want to find out which edges are incident to a given vertex $i$,  
-you have to look at all $|E|$ entries in row $i$, even if only small number of edges are incident to vertex $i$.
+**First**, it takes ![equation](http://latex.codecogs.com/gif.latex?O%28V%5Ctimes%20E%29) space.  
+**Second**, if you want to find out which edges are incident to a given vertex ![equation](http://latex.codecogs.com/gif.latex?i),  
+you have to look at all ![equation](http://latex.codecogs.com/gif.latex?%7CE%7C) entries in row ![equation](http://latex.codecogs.com/gif.latex?i), even if only small number of edges are incident to vertex ![equation](http://latex.codecogs.com/gif.latex?i).
 
 ### **Adjacency lists**
 
 Representing a graph with adjacency lists combines adjacency matrices with edge lists.  
-For each vertex $i$, store an array of the vertices adjacent to it.  
-We typically have an array of $|V|$ adjacency lists, one adjacency list per vertex.  
+For each vertex ![equation](http://latex.codecogs.com/gif.latex?i), store an array of the vertices adjacent to it.  
+We typically have an array of ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C) adjacency lists, one adjacency list per vertex.  
 Here's an adjacency-list representation of the example graph:
 
 ![alt text](src/lsit.png)
@@ -228,17 +228,17 @@ Vertex numbers in an adjacency list are not required to appear in any particular
 though it is often convenient to list them in increasing order, as in this example.
 
 We can get to each vertex's adjacency list in constant time, because we just have to index into an array.  
-To find out whether an edge $(i,j)$ is present in the graph, we go to $i$'s adjacency list in constant time and then look for $j$ in $i$'s adjacency list.
+To find out whether an edge ![equation](http://latex.codecogs.com/gif.latex?%28i%2Cj%29) is present in the graph, we go to ![equation](http://latex.codecogs.com/gif.latex?i)'s adjacency list in constant time and then look for ![equation](http://latex.codecogs.com/gif.latex?j) in ![equation](http://latex.codecogs.com/gif.latex?i)'s adjacency list.
 
 **How long does that take in the worst case?**  
-The answer is $O(d)$, where $d$ is the degree of vertex $i$, because that's how long $i$'s adjacency list is.
+The answer is ![equation](http://latex.codecogs.com/gif.latex?O%28d%29), where ![equation](http://latex.codecogs.com/gif.latex?d) is the degree of vertex ![equation](http://latex.codecogs.com/gif.latex?i), because that's how long ![equation](http://latex.codecogs.com/gif.latex?i)'s adjacency list is.
 
-The degree of vertex $i$ could be as high as $|V|-1$ (if $i$ is adjacent to all the other $|V|-1|$ vertices) or as low as 0 (if $i$ is isolated, with no incident edges).
+The degree of vertex ![equation](http://latex.codecogs.com/gif.latex?i) could be as high as ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C-1) (if ![equation](http://latex.codecogs.com/gif.latex?i) is adjacent to all the other ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C-1%7C) vertices) or as low as 0 (if ![equation](http://latex.codecogs.com/gif.latex?i) is isolated, with no incident edges).
 
 **How much space do adjacency lists take?**  
-We have $|V|$ lists, and although each list could have as many as $|V|-1$ vertices,  
-in total the adjacency lists for an undirected graph contain $2|E|$ elements.  
-Why $2|E|$? Each edge $(i,j)$ appears exactly twice in the adjacency lists, once in $i$'s list and once in $j$'s list, and there are $|E|$ edges.
+We have ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C) lists, and although each list could have as many as ![equation](http://latex.codecogs.com/gif.latex?%7CV%7C-1) vertices,  
+in total the adjacency lists for an undirected graph contain ![equation](http://latex.codecogs.com/gif.latex?2%7CE%7C) elements.  
+Why ![equation](http://latex.codecogs.com/gif.latex?2%7CE%7C)? Each edge ![equation](http://latex.codecogs.com/gif.latex?%28i%2Cj%29) appears exactly twice in the adjacency lists, once in ![equation](http://latex.codecogs.com/gif.latex?i)'s list and once in ![equation](http://latex.codecogs.com/gif.latex?j)'s list, and there are ![equation](http://latex.codecogs.com/gif.latex?%7CE%7C) edges.
 
 ### **Representations' evaluation**
 
@@ -247,8 +247,8 @@ Imagine the situation where we have to choose a technique to represent **Faceboo
 
 Let's also do the following assumptions:
 
-- **Facebook total users**: $2\times 10^9$
-- **User's total friends**: $5000$
+- **Facebook total users**: ![equation](http://latex.codecogs.com/gif.latex?2%5Ctimes%2010%5E9)
+- **User's total friends**: ![equation](http://latex.codecogs.com/gif.latex?5000)
 
 ![alt text](src/users_graph.png)
 
