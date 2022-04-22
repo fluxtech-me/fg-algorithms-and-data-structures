@@ -4,6 +4,6 @@
     *  ## [Binary search tree (deletion, conversion from binary tree to binary search tree)](topics/binary_search_tree/README.md)
     *  ## [AVL tree](topics/avl_tree/README.md)
     *  ## [Red-black tree](topics/red_black_tree/README.md)
-    *  ## B-tree
+    *  ## [B-tree](topics/b_tree/README.md)
     *  ## [Heap](topics/heap/README.md)
 *  ## [Graphs](topics/graph/README.md) 
