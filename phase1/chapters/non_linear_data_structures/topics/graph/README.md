@@ -294,7 +294,7 @@ Here's an example of a forest:
    In physics and chemistry, graph theory is used to study molecules.  
    Graph is also helpful in constructing the molecular structure as well as lattice of the molecule.  
    It also helps us to show the bond relation in between atoms and molecules, also help in comparing structure of one molecule to others.
-
+![alt text](src/Caffeine-molecule.jpg)
 4. **Facebook Graph**
    On Facebook, users are considered to be the vertices and if they are friends then there is an edge running between them.  
    Facebook’s Friend suggestion algorithm uses graph theory.
