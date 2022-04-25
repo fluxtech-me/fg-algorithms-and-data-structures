@@ -96,7 +96,7 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
   </semantics>
 </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="n\log n"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
   <semantics>
     <mrow class="MJX-TeXAtom-ORD">
       <mstyle displaystyle="true" scriptlevel="0">
@@ -106,11 +106,11 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
         <mi>n</mi>
       </mstyle>
     </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
+    <annotation encoding="application/x-tex"></annotation>
   </semantics>
 </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="n\log n"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
   <semantics>
     <mrow class="MJX-TeXAtom-ORD">
       <mstyle displaystyle="true" scriptlevel="0">
@@ -120,7 +120,7 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
         <mi>n</mi>
       </mstyle>
     </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
+    <annotation encoding="application/x-tex"></annotation>
   </semantics>
 </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="n\log n"></span><wbr>(balanced)</span>
 </td>
@@ -134,7 +134,7 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
 </td></tr><tr align="center">
 <td><a href="/wiki/Tournament_sort" title="Tournament sort">Tournament sort</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
   <semantics>
     <mrow class="MJX-TeXAtom-ORD">
       <mstyle displaystyle="true" scriptlevel="0">
@@ -144,7 +144,7 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
         <mi>n</mi>
       </mstyle>
     </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
+    <annotation encoding="application/x-tex"></annotation>
   </semantics>
 </math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="n\log n"></span></span>
 </td>
