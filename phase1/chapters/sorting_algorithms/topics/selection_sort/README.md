@@ -22,7 +22,7 @@ The smallest element is selected from the unsorted array and swapped with the le
 and that element becomes a part of the sorted array.  
 This process continues moving unsorted array boundary by one element to the right.
 
-This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο($n^{2}$), where `n` is the number of items.
+This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο(![equation](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)), where `n` is the number of items.
 
 ## How **Selection Sort** Works?
 
@@ -69,17 +69,17 @@ end function
 ## Complexity
 
 The main time cost comes from scanning through the array to find the next smallest item.  
-We do that $n$ times. The first time, we'll be looking at $n$ elements,  
-the next time it'll be $n - 1$ elements, and so on, until we're left with just one element.  
-Adding all those up, we've got: $n+(n−1)+(n−2)+…+2+1$  
-which is $O(n^2)$.  
-Selection sort doesn't rely on any extra arrays, so it's $O(1)$ space.
+We do that ![equation](http://latex.codecogs.com/gif.latex?n) times. The first time, we'll be looking at ![equation](http://latex.codecogs.com/gif.latex?n) elements,  
+the next time it'll be ![equation](http://latex.codecogs.com/gif.latex?n%20-%201) elements, and so on, until we're left with just one element.  
+Adding all those up, we've got: ![equation](http://latex.codecogs.com/gif.latex?n%2B%28n%E2%88%921%29%2B%28n%E2%88%922%29%2B%E2%80%A6%2B2%2B1)  
+which is ![equation](http://latex.codecogs.com/gif.latex?O%28n%5E2%29).  
+Selection sort doesn't rely on any extra arrays, so it's ![equation](http://latex.codecogs.com/gif.latex?O%281%29) space.
 
 |                       | **Complexity** |
 | :-------------------: | -------------- |
-|  **Worst case time**  | O($n^2$)       |
-|  **Best case time**   | O($n^2$)       |
-| **Avarage case time** | O($n^2$)       |
+|  **Worst case time**  | O(![equation](http://latex.codecogs.com/gif.latex?n%5E2))       |
+|  **Best case time**   | O(![equation](http://latex.codecogs.com/gif.latex?n%5E2))       |
+| **Avarage case time** | O(![equation](http://latex.codecogs.com/gif.latex?n%5E2))       |
 |       **Space**       | O(1)           |
 
 ## Advantages and Disadvantages
@@ -94,7 +94,7 @@ Selection sort doesn't rely on any extra arrays, so it's $O(1)$ space.
 
 **Disadvantages**
 
-- **Slow**. Selection sort takes O($n^2$) time, even if the input is already sorted.  
+- **Slow**. Selection sort takes O(![equation](http://latex.codecogs.com/gif.latex?n%5E2)) time, even if the input is already sorted.  
   That's too slow to be used on super-big data sets.
 
 ## Implementations

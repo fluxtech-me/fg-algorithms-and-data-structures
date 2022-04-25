@@ -22,8 +22,8 @@ Hence the name, insertion sort.
 
 The array is searched sequentially and unsorted items are moved  
 and inserted into the sorted sub-list (in the same array).  
-This algorithm is not suitable for large data sets as its average and worst case complexity are of $Ο(n^2)$,
-where $n$ is the number of items.
+This algorithm is not suitable for large data sets as its average and worst case complexity are of ![equation](http://latex.codecogs.com/gif.latex?%CE%9F%28n%5E2%29),
+where ![equation](http://latex.codecogs.com/gif.latex?n) is the number of items.
 
 ## How **Insertion Sort** Works?
 
@@ -75,23 +75,23 @@ End
 
 - **Best Case Complexity**  
   It occurs when there is no sorting required, i.e. the array is already sorted.  
-  The best-case time complexity of insertion sort is $O(n)$.
+  The best-case time complexity of insertion sort is ![equation](http://latex.codecogs.com/gif.latex?O%28n%29).
 - **Average Case Complexity** It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending.  
-  The average case time complexity of insertion sort is $O(n^2)$.
+  The average case time complexity of insertion sort is ![equation](http://latex.codecogs.com/gif.latex?O%28n%5E2%29).
 - **Worst Case Complexity** - It occurs when the array elements are required to be sorted in reverse order.  
   That means suppose you have to sort the array elements in ascending order,  
   but its elements are in descending order.  
-  The worst-case time complexity of insertion sort is $O(n^2)$.
+  The worst-case time complexity of insertion sort is ![equation](http://latex.codecogs.com/gif.latex?O%28n%5E2%29).
 
 **Space Complexity**
-The space complexity of insertion sort is $O(1)$.  
+The space complexity of insertion sort is ![equation](http://latex.codecogs.com/gif.latex?O%281%29).  
 It is because, in insertion sort, an extra variable is required for swapping.
 
 |                       | **Complexity** |
 | :-------------------: | -------------- |
-|  **Worst case time**  | O($n^2$)       |
-|  **Best case time**   | O($n$)         |
-| **Avarage case time** | O($n^2$)       |
+|  **Worst case time**  | O(![equation](http://latex.codecogs.com/gif.latex?n%5E2))       |
+|  **Best case time**   | O(![equation](http://latex.codecogs.com/gif.latex?n))         |
+| **Avarage case time** | O(![equation](http://latex.codecogs.com/gif.latex?n%5E2))       |
 
 ## Advantages and Disadvantages
 
@@ -105,7 +105,7 @@ It is because, in insertion sort, an extra variable is required for swapping.
 
 **Disadvantages**
 
-- One of the major disadvantages of Insertion sort is its Average Time Complexity of $O(n^2)$.
+- One of the major disadvantages of Insertion sort is its Average Time Complexity of ![equation](http://latex.codecogs.com/gif.latex?O%28n%5E2%29).
 - If the number of elements is relatively large it can take large time as compared to Quick Sort or Merge Sort.
 
 ## Implementations

@@ -41,9 +41,9 @@ This is an example of a complete binary tree.
 With going back to heap's definition:  
 A **heap** is a **complete binary tree** and possesses an interesting property called a **heap property**, which implies that every node in the heap is in a specific relationship with its children.
 
-Since binary heap is a complete binary tree, the height of the tree is always $O(log n)$.  
+Since binary heap is a complete binary tree, the height of the tree is always ![equation](http://latex.codecogs.com/gif.latex?O%28log%20n%29).  
 This is very important because most of the operations we perform in the binary heap  
-scan the tree from top to bottom or bottom to top which leads to complexity of $O(log n)$.
+scan the tree from top to bottom or bottom to top which leads to complexity of ![equation](http://latex.codecogs.com/gif.latex?O%28log%20n%29).
 
 ## Types of Heaps
 
@@ -55,18 +55,18 @@ There are two types of heaps depending upon how the nodes are ordered in the tre
 ![alt text](https://algorithmtutor.com/images/max-and-min-heap.png)
 
 A binary heap can be efficiently implemented using an array.  
-To implement a binary heap of height $h$, we need $O(2^h)$ memory blocks.  
+To implement a binary heap of height ![equation](http://latex.codecogs.com/gif.latex?h), we need ![equation](http://latex.codecogs.com/gif.latex?O%282%5Eh%29) memory blocks.  
 The figure below shows the array implementation of the first tree shown in the previous figure.
 
 ![alt text](https://algorithmtutor.com/images/heap_array_implementation.png)
 
-The parent, the left child, and the right of a node at $i$ can be calculated as:
+The parent, the left child, and the right of a node at ![equation](http://latex.codecogs.com/gif.latex?i) can be calculated as:
 
 |  **Node**   | **Index**           |
 | :---------: | ------------------- |
-|   Parent    | $⌊\frac{(i−1)}{2}⌋$ |
-| Left Child  | $2i+1$              |
-| Right Child | $2i+2$              |
+|   Parent    | ![equation](http://latex.codecogs.com/gif.latex?%E2%8C%8A%5Cfrac%7B%28i%E2%88%921%29%7D%7B2%7D%E2%8C%8B) |
+| Left Child  | ![equation](http://latex.codecogs.com/gif.latex?2i%2B1)              |
+| Right Child | ![equation](http://latex.codecogs.com/gif.latex?2i%2B2)              |
 
 ## Operations on Heaps
 
@@ -131,7 +131,7 @@ The image below shows the steps of inserting an item in an example heap.
 ![alt text](https://algorithmtutor.com/images/binaryheap_insert.png)
 
 In order to insert a new item, in the worst case, we need to travel all the way to the root item.  
-Therefore, the complexity of the insertion operation is $O(log n)$.
+Therefore, the complexity of the insertion operation is ![equation](http://latex.codecogs.com/gif.latex?O%28log%20n%29).
 
 ### Deletion
 
@@ -164,15 +164,15 @@ The image below shows the steps of deleting the maximum item in an example heap.
 ## Applications
 
 - [Heap Sort](https://www.geeksforgeeks.org/heap-sort/)  
-  Heap Sort uses Binary Heap to sort an array in $O(nlogn)$ time.
+  Heap Sort uses Binary Heap to sort an array in ![equation](http://latex.codecogs.com/gif.latex?O%28nlogn%29) time.
 
 * [Priority Queue](../../../linear_data_structures/topics/queue/README.md#priority-queue)  
-  Priority queues can be efficiently implemented using Heap because it supports `insert()`, `delete()` and `extract_max()`, `decrease_key()` operations in $O(logn)$ time.
+  Priority queues can be efficiently implemented using Heap because it supports `insert()`, `delete()` and `extract_max()`, `decrease_key()` operations in ![equation](http://latex.codecogs.com/gif.latex?O%28logn%29) time.
 
 - [Dijkstra’s Shortest Path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)  
   Min-Heap to store the vertices not yet included in **Shortest Path Tree** (the unsettled set, or the vertices for which the shortest distance is not finalized yet).  
   Min-Heap is used as a **priority queue** to get the minimum distance vertex from set of not yet included vertices.  
-  Time complexity of operations like `extract-min` and `decrease-key` value is $O(logn)$ for Min-Heap.
+  Time complexity of operations like `extract-min` and `decrease-key` value is ![equation](http://latex.codecogs.com/gif.latex?O%28logn%29) for Min-Heap.
 
   Let's understand the main idea using the image below:
   ![alt text](https://www.freecodecamp.org/news/content/images/2020/06/image-126.png)
@@ -183,11 +183,11 @@ The image below shows the steps of deleting the maximum item in an example heap.
 
 - [​k largest elements in an array](https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/)
 - [Sort an almost sorted array](https://www.geeksforgeeks.org/nearly-sorted-algorithm/)  
-  Given an array of $n$ elements, where each element is at most $k$ away from its target position.  
-  Devise an algorithm that sorts in $O(n log k)$ time.
+  Given an array of ![equation](http://latex.codecogs.com/gif.latex?n) elements, where each element is at most ![equation](http://latex.codecogs.com/gif.latex?k) away from its target position.  
+  Devise an algorithm that sorts in ![equation](http://latex.codecogs.com/gif.latex?O%28n%20log%20k%29) time.
 
 - [Merge K Sorted Arrays](https://www.geeksforgeeks.org/merge-k-sorted-arrays/)  
-  Given $k$ sorted arrays of size $n$ each, our problem is to merge them in $O( nklog k)$ time.
+  Given ![equation](http://latex.codecogs.com/gif.latex?k) sorted arrays of size ![equation](http://latex.codecogs.com/gif.latex?n) each, our problem is to merge them in ![equation](http://latex.codecogs.com/gif.latex?O%28%20nklog%20k%29) time.
 
 ## Comparisons with other Trees
 
@@ -196,7 +196,7 @@ The image below shows the steps of deleting the maximum item in an example heap.
 By comparison, if a binary tree is sorted, items to the left of a particular node are smaller,  
 items to the right are larger, then we call it Binary Search Tree.  
 Heap does not guarantee the order while Binary Search Tree does.  
-A Balanced Binary Search Tree guarantees height of $O(log n)$ for $n$ items.
+A Balanced Binary Search Tree guarantees height of ![equation](http://latex.codecogs.com/gif.latex?O%28log%20n%29) for ![equation](http://latex.codecogs.com/gif.latex?n) items.
 
 ### Heap vs Red-Black Tree
 
@@ -208,8 +208,8 @@ Heap just guarantees that elements on higher levels are greater (for max-heap) o
 
 ### Conclusion
 
-Heap is better at find_min/find_max ($O(1)$), while BST is good at all finds ($O(logN)$).  
-Insert is $O(logN)$ for both structures.  
+Heap is better at find_min/find_max (![equation](http://latex.codecogs.com/gif.latex?O%281%29)), while BST is good at all finds (![equation](http://latex.codecogs.com/gif.latex?O%28logN%29)).  
+Insert is ![equation](http://latex.codecogs.com/gif.latex?O%28logN%29) for both structures.  
 If you only care about find_min/find_max (e.g. priority-related),  
 go with heap.  
 If you want everything sorted, go with BST.

@@ -28,7 +28,7 @@ Let's first understand the concept behind **self-balancing binary trees**.
 In computer science, a **self-balancing binary search tree (BST)** is any node-based binary search tree  
 that automatically keeps its height small in the face of arbitrary item insertions and deletions.
 
-For the **height-balanced binary trees**, the height is defined to be logarithmic $O(log(n))$ in the number $n$ of items.
+For the **height-balanced binary trees**, the height is defined to be logarithmic ![equation](http://latex.codecogs.com/gif.latex?O%28log%28n%29%29) in the number ![equation](http://latex.codecogs.com/gif.latex?n) of items.
 
 With going back to our topic, an **AVL** tree (named after inventors **Adelson-Velsky** and **Landis**) is a **self-balancing binary search tree (BST)**.  
 It was the first such data structure to be invented.  
@@ -45,7 +45,7 @@ Consider the following keys inserted in the given order in the binary search tre
 ![alt text](https://www.guru99.com/images/2/063020_0727_AVLTreesRot1.png)
 
 The height of the tree grows linearly in size when we insert the keys in increasing order of their value.  
-Thus, the search operation, at worst, takes $O(n)$.
+Thus, the search operation, at worst, takes ![equation](http://latex.codecogs.com/gif.latex?O%28n%29).
 
 It takes linear time to search for an element; hence there is no use of using the Binary Search Tree structure.  
 On the other hand, if the height of the tree is balanced, we get better searching time.
@@ -56,7 +56,7 @@ Let us now look at the same keys but inserted in a different order.
 
 Here, the keys are the same, but since they are inserted in a different order,  
 they take different positions, and the height of the tree remains balanced.  
-Hence search will not take more than $O(log(n))$ for any element of the tree.  
+Hence search will not take more than ![equation](http://latex.codecogs.com/gif.latex?O%28log%28n%29%29) for any element of the tree.  
 It is now evident that if insertion is done correctly, the tree’s height can be kept balanced.
 
 In AVL trees, we keep a check on the height of the tree during insertion operation.  

@@ -59,18 +59,18 @@ Let's define `r` to be the range of numbers to be sorted and `n` is the number o
 
 |                       | **Complexity** |
 | :-------------------: | -------------- |
-|  **Worst case time**  | $O(n + r)$     |
+|  **Worst case time**  | ![equation](http://latex.codecogs.com/gif.latex?O%28n%20%2B%20r%29)     |
 |  **Best case time**   | ―              |
-| **Average case time** | $O(n+r)$       |
+| **Average case time** | ![equation](http://latex.codecogs.com/gif.latex?O%28n%2Br%29)       |
 
-**Space Complexity** ― $O(r)$
+**Space Complexity** ― ![equation](http://latex.codecogs.com/gif.latex?O%28r%29)
 
 ## Advantages and Disadvantages
 
 **Advantages**
 
 - **Linear Time Complexity**.  
-  Since it is not a comparison-based sorting, it is not lower bounded by $O(nlogn)$ complexity.
+  Since it is not a comparison-based sorting, it is not lower bounded by ![equation](http://latex.codecogs.com/gif.latex?O%28nlogn%29) complexity.
 - Reduced space complexity if the range of elements is narrow, that is, more frequency of close integers.
 - Counting Sort is a stable sorting algorithm as relative order of elements with equal values is maintained.
 - Since counting sort is suitable for sorting numbers that belong to a well-defined,  
@@ -81,19 +81,19 @@ Let's define `r` to be the range of numbers to be sorted and `n` is the number o
 
 - Both time and space complexities skyrocket if the range of input numbers is large.
 - It works only for discrete values like integers.
-- It is not an **in-place** sorting algorithm as it requires extra additional space $O(k)$.
+- It is not an **in-place** sorting algorithm as it requires extra additional space ![equation](http://latex.codecogs.com/gif.latex?O%28k%29).
 
 ## Comparison With Other Sorting Algorithms
 
-- While any comparison based sorting algorithm requires $O(n (log n))$ complexity,  
-  counting sort has a running time of $O(n)$,  
+- While any comparison based sorting algorithm requires ![equation](http://latex.codecogs.com/gif.latex?O%28n%20%28log%20n%29%29) complexity,  
+  counting sort has a running time of ![equation](http://latex.codecogs.com/gif.latex?O%28n%29),  
   when the length of the input list is not much smaller than the range `r` of numbers, in the input array.
 
 - Counting sort is very efficient in the cases where range is comparable to number of input elements  
   as it performs sorting in linear time and can be an advantage in such cases over other sorting algorithms such as quick sort.  
-  When in the worst case quick sort takes $O(n^2)$ time, counting sort only takes $O(n)$ time provided that the range of elements is not very large.
+  When in the worst case quick sort takes ![equation](http://latex.codecogs.com/gif.latex?O%28n%5E2%29) time, counting sort only takes ![equation](http://latex.codecogs.com/gif.latex?O%28n%29) time provided that the range of elements is not very large.
 
-- Most sorting algorithms perform in quadratic time $O(n^2)$, and the two exceptions — **heap** and **merge** sort in time $O(nlog n)$.  
+- Most sorting algorithms perform in quadratic time ![equation](http://latex.codecogs.com/gif.latex?O%28n%5E2%29), and the two exceptions — **heap** and **merge** sort in time ![equation](http://latex.codecogs.com/gif.latex?O%28nlog%20n%29).  
   Counting sort is the only sorting algorithm which performs in linear time (for small range of elements).
 
 - There is no comparison between any elements,  
