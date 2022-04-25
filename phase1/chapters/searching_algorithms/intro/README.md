@@ -24,3 +24,8 @@ This means that the maximum number of operations needed to find the search targe
 is a logarithmic function of the size of the search space.
 
 Search algorithms can be made faster or more efficient by specially constructed database structures, such as search trees, hash maps, and database indexes.
+
+There are also search methods designed for quantum computers, like [Grover's algorithm](https://en.wikipedia.org/wiki/Grover%27s_algorithm),  
+that are theoretically faster than linear or brute-force search even without the help of data structures or heuristics.
+
+While the ideas and applications behind quantum computers are still entirely theoretical, studies have been conducted with algorithms like Grover's that accurately replicate the hypothetical physical versions of quantum computing systems

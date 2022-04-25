@@ -1,6 +1,9 @@
 # Sorting Algorithms
 
-## [Table of Contents](#table-of-contents) 
+## [Table of Contents](#table-of-contents)
+
+- [Sorting Algorithms](#sorting-algorithms)
+  - [Table of Contents](#table-of-contents)
   - [The Concept](#the-concept)
   - [Classifications](#classifications)
   - [Comparison of Algorithms](#comparison-of-algorithms)
@@ -11,39 +14,44 @@
 &nbsp;
 
 ## The Concept
+
 In computer science, a **sorting algorithm** is an algorithm that puts elements of a list into an order.  
 The most frequently used orders are **numerical order** and **lexicographical order**, and **either ascending** or **descending**.  
 Efficient sorting is important for optimizing the efficiency of other algorithms (such as **search** and **merge** algorithms) that require input data to be in sorted lists.  
 Sorting is also often useful for canonicalizing data and for producing human-readable output.
 
 Formally, the output of any sorting algorithm must satisfy two conditions:
+
 - The output is in **monotonic** order (each element is no smaller/larger than the previous element, according to the required order).
 - The output is a **permutation** (a reordering, yet retaining all of the original elements) of the input.
 
 &nbsp;
 
 ## Classifications
-Sorting algorithms can be classified by:  
+
+Sorting algorithms can be classified by:
+
 - **Computational complexity**
-    - **Best**, **worst** and **average** case behavior in terms of the size of the list.  
+  - **Best**, **worst** and **average** case behavior in terms of the size of the list.  
     For typical serial sorting algorithms, **good behavior is O(n log n)**, with parallel sort in **O(log2 n)**, and **bad behavior is O(n^2)**.  
     Ideal behavior for a serial sort is **O(n)**, but this is not possible in the average case. Optimal parallel sorting is **O(log n)**.
-    - Swaps for "in-place" algorithms.
+  - Swaps for "in-place" algorithms.
 - **Memory usage** (and use of other computer resources).  
-In particular, some sorting algorithms are "in-place".  
-Strictly, an in-place sort needs only O(1) memory beyond the items being sorted;  
-sometimes O(log n) additional memory is considered "in-place".
+  In particular, some sorting algorithms are "in-place".  
+  Strictly, an in-place sort needs only O(1) memory beyond the items being sorted;  
+  sometimes O(log n) additional memory is considered "in-place".
 - **Recursion**: Some algorithms are either recursive or non-recursive, while others may be both (e.g., merge sort).
 - **Stability**: stable sorting algorithms maintain the relative order of records with equal keys (i.e., values).
 - Whether or not they are a **comparison sort**.  
-A comparison sort examines the data only by comparing two elements with a comparison operator.
+  A comparison sort examines the data only by comparing two elements with a comparison operator.
 - **General method**: insertion, exchange, selection, merging, etc.  
-Exchange sorts include bubble sort and quicksort. Selection sorts include cycle sort and heapsort.
-The remainder of this discussion almost exclusively concentrates upon serial algorithms and assumes serial operation.
+  Exchange sorts include bubble sort and quicksort. Selection sorts include cycle sort and heapsort.
+  The remainder of this discussion almost exclusively concentrates upon serial algorithms and assumes serial operation.
 - **Adaptability**: Whether or not the presortedness of the input affects the running time.  
-Algorithms that take this into account are known to be adaptive.
+  Algorithms that take this into account are known to be adaptive.
 
 ## Comparison of Algorithms
+
 In these tables, `n` is the number of records to be sorted.  
 The columns "**Best**", "**Average**" and "**Worst**" give the time complexity in each case,  
 under the assumption that the length of each key is constant, and therefore that all comparisons,  
@@ -54,7 +62,8 @@ hence the base of the logarithms does not matter.
 &nbsp;
 
 ### Comparison Sorts
-Below is a table of comparison sorts. A comparison sort cannot perform better than O(n log n) on average.  
+
+Below is a table of comparison sorts. A comparison sort cannot perform better than O(n log n) on average.
 
 <table class="wikitable sortable jquery-tablesorter">
 <caption><a href="/wiki/Comparison_sort" title="Comparison sort">Comparison sorts</a>
@@ -70,32 +79,10 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
 <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Other notes
 </th></tr></thead><tbody>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <tr align="center">
 <td><a href="/wiki/Tree_sort" title="Tree sort">Tree sort</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
   <semantics>
     <mrow class="MJX-TeXAtom-ORD">
       <mstyle displaystyle="true" scriptlevel="0">
@@ -1300,6 +1287,7 @@ Below is a table of comparison sorts. A comparison sort cannot perform better th
 </td></tr></tbody><tfoot></tfoot></table>
 
 ### Non-comparison Sorts
+
 The following table describes integer sorting algorithms and other sorting algorithms that are not comparison sorts.  
 Complexities below assume `n` items to be sorted, with keys of size `k`, digit size `d`, and `r` the range of numbers to be sorted.  
 Many of them are based on the assumption that the key size is large enough that all entries have unique key values.
@@ -2069,8 +2057,8 @@ Many of them are based on the assumption that the key size is large enough that 
 <td align="left">A variation of bucket sort, which works very similarly to MSD Radix Sort. Specific to post service needs.
 </td></tr></tbody><tfoot></tfoot></table>
 
-
 ### Others
+
 Some algorithms are slow compared to those discussed above,  
 such as the **bogosort** with unbounded run time.  
 These sorts are usually described for educational purposes  

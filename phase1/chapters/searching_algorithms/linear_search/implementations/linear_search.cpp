@@ -15,7 +15,7 @@ int linear_search(int arr[], int n, int x)
 
 int main()
 {
-    const int size = 7;
+    const int size = 17;
     int arr[size];
     for (int i = 0; i < size; i++)
     {
