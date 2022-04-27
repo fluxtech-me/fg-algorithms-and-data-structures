@@ -51,11 +51,7 @@ int recursive_binary_search(int arr[], int l, int r, int x)
 int main()
 {
     const int size = 17;
-    int arr[size];
-    for (int i = 0; i < size; i++)
-    {
-        arr[i] = rand() % 100;
-    }
+    int arr[size] = {15, 21, 26, 27, 35, 40, 49, 59, 62, 63, 77, 83, 86, 89, 90, 92, 93};
     cout << "Generated array: ";
     for (int i = 0; i < size; i++)
     {
