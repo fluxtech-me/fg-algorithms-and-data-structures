@@ -15,18 +15,20 @@ const jumpSearch = (arr, x, n) => {
       return -1;
     }
   }
+  console.log(prev, x)
   if (arr[prev] == x) {
     return prev;
   }
 
   return -1;
+  // return prev;
 };
 
 let arr = [2, 3, 4, 10, 40];
 let x = 10;
 let n = arr.length;
 
-let result = jumpSearch(arr, n, x);
+let result = jumpSearch(arr, x, n);
 result == -1
   ? console.log("Element is not present in array")
   : console.log("Element is present at index " + result);

@@ -30,7 +30,7 @@ the following subroutine uses binary search to find the index of $T$ in $A$.
 
 Here's the algorithm for implementing binary search:
 
-- Set **L** to 0 and **R** to 1.
+- Set **L** to 0 and **R** to $n-1$.
 - If $L > R$, the search terminates as unsuccessful..
 - Set $m$ (the position of the middle element) to the floor of ${\frac {L+R}{2}}$, which is the greatest integer less than or equal to ${\frac {L+R}{2}}$.
 - If $A_{m}<T$, set $L$ to $m+1$ and go to step 2.
