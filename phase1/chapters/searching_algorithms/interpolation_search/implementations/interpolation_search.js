@@ -1,4 +1,4 @@
-const interpolationSearch = (arr, low, high, x) => {
+const interpolationSearch = (array, low, high, K) => {
   let index;
 
   while (low <= high && K >= array[low] && K <= array[high]) {

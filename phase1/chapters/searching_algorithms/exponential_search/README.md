@@ -74,6 +74,8 @@ We can’t directly apply Binary Search as we don’t have an upper limit or hig
 
 So, our main goal will be to find the range where binary search can be applied.
 
+[Here's](implementations/first_positive.js) an implementation to the given problem.
+
 ## Implementations
 
 Here are the implementations of the **exponential search** algorithm:
