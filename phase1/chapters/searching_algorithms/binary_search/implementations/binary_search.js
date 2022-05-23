@@ -37,7 +37,7 @@ const recursiveBinarySearch = (arr, l, r, x) => {
 };
 
 let arr = [2, 3, 4, 10, 40];
-let x = 10;
+let x = 100;
 let n = arr.length;
 
 let result = recursiveBinarySearch(arr, 0, n - 1, x);

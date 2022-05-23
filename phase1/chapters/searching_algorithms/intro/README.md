@@ -2,8 +2,7 @@
 
 In computer science, a **search algorithm** is an algorithm which solves a search problem.
 
-Search algorithms work to retrieve information stored within some data structure,  
-or calculated in the search space of a problem domain, with either discrete or continuous values.
+Search algorithms work to retrieve information stored within some data structure.
 
 The appropriate search algorithm often depends on the data structure being searched, and may also include prior knowledge about the data.
 
@@ -12,7 +11,7 @@ Search algorithms can be classified based on their mechanism of searching into *
 - **Linear**  
   Linear search algorithms check every record for the one associated with a target key in a linear fashion.
 - **Binary**  
-  **Binary, or half-interval**, searches repeatedly target the center of the search structure and divide the search space in half.  
+  Binary, or half-interval, searches repeatedly target the center of the search structure and divide the search space in half.  
   Comparison search algorithms improve on linear searching by successively eliminating records based on comparisons of the keys  
   until the target record is found, and can be applied on data structures with a defined order.
 - **Hashing**  
