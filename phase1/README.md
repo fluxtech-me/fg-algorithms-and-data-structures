@@ -27,14 +27,13 @@
   >   - Heap
   > - Graphs
 - ## [Searching Algorithms](chapters/searching_algorithms/README.md)
-  > - [Linear Search](chapters/searching_algorithms/linear_search/README.md)
-  > - [Problem: Find a peak element]
-  > - [Binary Search](chapters/searching_algorithms/binary_search/README.md)
-  > - [Jump Search](chapters/searching_algorithms/jump_search/README.md)
-  > - [Interpolation Search](chapters/searching_algorithms/interpolation_search/README.md)
-  > - [Exponential Search](chapters/searching_algorithms/exponential_search/README.md)
-  > - [Sublist Search (Search a linked list in another list)](chapters/searching_algorithms/sublist_search/README.md)
-  > - [Fibonacci Search](chapters/searching_algorithms/fibonacci_search/README.md)
+  > - Linear Search
+  > - Binary Search
+  > - Jump Search
+  > - Interpolation Search
+  > - Exponential Search
+  > - Sublist Search (Search a linked list in another list)
+  > - Fibonacci Search
 - ## [Problem-solving approaches (with problem examples)](chapters/problem_solving_approaches/README.md)
   > - Greedy
   > - Divide and Conquer
