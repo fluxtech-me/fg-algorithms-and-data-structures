@@ -57,7 +57,7 @@ txt[] = "AAAAAAAAAAAAAAAAAB"
 pat[] = "AAAAB"
 
 txt[] = "ABABABCABABABCABABABC"
-pat[] =  "ABABAC"
+pat[] =  "ABABC"
 ```
 
 The basic idea behind KMP’s algorithm is: whenever we detect a mismatch (after some matches),  
@@ -129,7 +129,7 @@ The idea is to not match a character that we know will anyway match.
 
 **Best Case Complexity**  
 The best case occurs when the first number of the pattern is not present in text at all.  
-The number of comparisons in the best case is $O(n)$.
+The number of comparisons in the best case is $O(m)$.
 
 ```JS
 let list1 = 5 -> 2 -> 3
@@ -137,7 +137,7 @@ let list2 = 1 -> 2 -> 3 -> 4 -> 6
 ```
 
 **Worst Case Complexity**  
-The worst case complexity is $O(m*n$) where `m` is the number of nodes in second list and `n` in first.  
+The worst case complexity is $O(m*n$) where `n` is the number of nodes in second list and `m` in first.  
 It occurs when only the last number is different. E.g.
 
 ```JS
@@ -152,10 +152,10 @@ The average case complexity is estimated to be same as the worst case complexity
 
 ### Complexity of the **KMP** Algorithm
 
-**Best Case Complexity** - $O(n)$  
+**Best Case Complexity** - $O(m)$  
 **Worst Case Complexity** - $O(m+n)$  
 **Average Case Complexity** - $O(m+n)$  
-**Space Complexity** - $O(n)$
+**Space Complexity** - $O(m)$
 
 ## Applications
 

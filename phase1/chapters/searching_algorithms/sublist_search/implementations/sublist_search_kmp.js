@@ -45,6 +45,8 @@ function kmpSearch(text, word) {
   return -1;
 }
 
-str = "AABAACAABAA";
-patternTable = buildPatternTable(str);
-console.log(patternTable);
+let str = "ABABABDABABABHABABABD";
+let pat = "ABABC";
+let res = kmpSearch(str, pat);
+
+console.log(res === -1 ? "Not Found !!!" : `Found at index ${res}`);
