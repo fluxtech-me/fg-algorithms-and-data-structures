@@ -27,6 +27,7 @@
   >   - Heap
   > - Graphs
 - ## [Searching Algorithms](chapters/searching_algorithms/README.md)
+
   > - Linear Search
   > - Binary Search
   > - Jump Search
@@ -34,6 +35,10 @@
   > - Exponential Search
   > - Sublist Search (Search a linked list in another list)
   > - Fibonacci Search
+
+- ## [Selection Algorithms](chapters/selection_algorithms/README.md)
+  > - Deterministic Selection
+  > - Quick Selection
 - ## [Problem-solving approaches (with problem examples)](chapters/problem_solving_approaches/README.md)
   > - Greedy
   > - Divide and Conquer
