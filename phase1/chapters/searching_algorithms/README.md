@@ -1,6 +1,6 @@
 # Searching Algorithms
 
-## [Linear Search](linear_search/README.md))
+## [Linear Search](linear_search/README.md)
 
 ## [Binary Search](binary_search/README.md)
 
